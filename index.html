@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Portfólio Pessoal</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome CDN (ícones) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- Estilos Personalizados -->
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5 !important;
+    }
 
+    .apresentacao img {
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid #f8bbd0;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .card {
+      border: 1px solid #f8bbd0;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-body i {
+      color: #ffd7e4;
+    }
+    .lead {
+      background-color: rgb(255, 203, 229);
+      border-radius: 8px;
+      padding: 5px;
+      font-size: 16px;;
+    }
+    .btn-primary {
+      background-color: #e91e63;
+      border-color: #e91e63;
+    }
+    .btn-primary:hover {
+      background-color: #d81b60;
+      border-color: #d81b60;
+    }
+
+    a {
+      color: #c2185b;
+    }
+    a:hover {
+      color: #ad1457;
+    }
+
+    footer {
+      background-color: #fce4ec;
+      padding: 20px 0;
+      color: #880e4f;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Larissa Araujo Gomes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#apresentacao">Apresentação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aprendizado">Curso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Apresentação e Trajetória -->
+  <section id="apresentacao" class="py-5 bg-light apresentacao">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Apresentação Pessoal</h2>
+      <div class="row align-items-center justify-content-center text-center text-md-start">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=7c2c11eaaf&attid=0.1&permmsgid=msg-a:r-8519948562805125222&th=196f91780917fbd9&view=fimg&fur=ip&permmsgid=msg-a:r-8519948562805125222&sz=s0-l75-ft&attbid=ANGjdJ_zNwXMk9MQ-g-UwtKNctBZbEnnBtOG9-2suiWbREDJJdX35cSFt9tzci0xnBVlE6YMe5o77UGHGQqrQiYaY6eh14dK-WU2yHfdG41ocHezS1dQlfeFx1QVX5c&disp=emb&realattid=ii_196f91772a6ffd6090d1&zw"
+            alt="Foto de Perfil"
+            class="img-fluid rounded-circle border border-4 border-pink"
+          />
+        </div>
+        <div class="col-md-6">
+          <h4>Oii Pessoal!</h4>
+          <p>
+          Olá! Me chamo Larissa, tenho 19 anos. Estou iniciando minha jornada
+          no mundo da programação com foco no meu desenvolvimento e aprendizado.
+        </p>
+              <p class="lead">
+            Minha trajetória começou com curiosidade sobre como sites funcionam,
+            e desde então venho me dedicando ao aprendizado de ferramentas
+            modernas. Meu objetivo é me tornar um(a) desenvolvedor(a)
+            especializada no Back-And.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades Técnicas -->
+  <section id="habilidades" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Habilidades Técnicas</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fab fa-html5 fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">
+                Com o HTML, é possível organizar a estrutura de uma página,
+                criando seções com textos, imagens e links de forma simples e
+                prática.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fab fa-css3-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                O CSS serve para dar estilo essa estrutura, ajustando cores,
+                fontes e layout, tornando o visual do site mais atrativo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">
+                Facilita criar interfaces consistentes e responsivas, tornando o
+                desenvolvimento mais eficiente e adaptáveis a diferentes
+                dispositivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fab fa-github fa-3x text-dark mb-3"></i>
+              <h5 class="card-title">GitHub</h5>
+              <p class="card-text">
+                Uso o GitHub para versionar projetos, colaborar com equipes e
+                compartilhar meu código de forma organizada e segura.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conhecimentos do Curso -->
+  <section id="aprendizado" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Conhecimentos Adquiridos</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><strong>HTML:</strong> Tags semânticas como &lt;header&gt;, &lt;section&gt;, &lt;footer&gt;.</li>
+            <li><strong>CSS:</strong> Customização de layout, cores, fontes e espaçamentos.</li>
+            <li><strong>Bootstrap:</strong> Componentes como Navbar, Cards, Botões, e Grid System.</li>
+            <li><strong>GitHub:</strong> Controle de versão, colaboração em equipe e organização de projetos.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Com este curso, aprendi a importância da estruturação semântica e da
+            responsividade. Agora consigo desenvolver páginas profissionais e
+            acessíveis que funcionam bem em diferentes dispositivos. Este
+            conhecimento transformou minha forma de aprender e pensar sobre
+            desenvolvimento web.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Contato</h2>
+      <p><i class="fas fa-envelope"></i> larissaaraujogomes1706@gmail.com</p>
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://linkedin.com/in/seulink" target="_blank"
+          >linkedin.com/in/seulink</a
+        >
+      </p>
+      <p>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a>
+      </p>
+      <a href="mailto:email@exemplo.com" class="btn btn-primary mt-3">Fale Comigo</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="text-center">
+      © 2025 - Desenvolvido por Larissa Araujo Gomes | Faculdade PUC Minas
+      Programação Web
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
